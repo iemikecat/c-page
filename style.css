@@ -37,6 +37,14 @@ body {
     transition: opacity 300ms, visibility 300ms;
 }
 
+@media screen and (max-width: 479px) { 
+
+    .center .input_box {
+        width: 80%;
+    }
+    
+}
+
 .center .input_box.hide {
     opacity: 0;
     visibility: hidden;
