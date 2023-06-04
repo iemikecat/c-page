@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center .ome {
+    font-size: calc(4vh + 4vw);
+    font-weight: bold;
+}
+
+.center .input_box {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms, visibility 300ms;
+}
+
+.center .input_box.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.center .input_box .label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.center .input_box .input {
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    outline: 0px solid transparent;
+    border: 2px solid black;
+    transition: outline 100ms, border 200ms, color 200ms, background-color 200ms;
+}
+
+.center .input_box .input:focus {
+    outline: 5px solid #00000023;
+}
+
+.center .input_box .input:disabled {
+    cursor: default;
+    color: #dadada;
+    background-color: #ebebeb;
+    border: 2px solid #b1b1b1;
+}
+
+.center .input_box .btn {
+    padding: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    border: 2px solid black;
+    background-color: black;
+    transition: border 200ms, color 200ms, background-color 200ms;
+}
+
+.center .input_box .btn:disabled {
+    cursor: default;
+    color: #dadada;
+    border: 2px solid #b1b1b1;
+    background-color: #b1b1b1;
+}
