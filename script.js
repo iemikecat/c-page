@@ -22,9 +22,7 @@ window.addEventListener("DOMContentLoaded",() => {
                 center_input_box_submit.disabled = false
                 input_box.classList.add("hide");
                 setTimeout(() => {
-                    center_input_box.style.display = "none"
-                    center_input_box_submit.style.display = "none"
-                    insert_text.style.display = "none"
+                    input_box.style.display = "none"
                     ome_message.style.display = "block"
                 },300);
             } else {
