@@ -29,6 +29,10 @@ body {
     font-weight: bold;
 }
 
+.center .ome .description {
+    font-size: calc(1.5vh + 1.5vw);
+}
+
 .center .input_box {
     display: flex;
     flex-direction: column;
