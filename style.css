@@ -25,6 +25,8 @@ body {
 }
 
 .center .ome {
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: calc(4vh + 4vw);
     font-weight: bold;
 }
