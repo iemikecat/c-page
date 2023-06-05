@@ -14,6 +14,8 @@ html {
 body {
     width: 100%;
     height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
     background-image: url("background.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -23,14 +25,14 @@ body {
 .center {
     width: 100%;
     height: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .center .ome {
-    padding-left: 10%;
-    padding-right: 10%;
+    display: none;
     font-size: calc(4vh + 4vw);
     font-weight: bold;
 }
@@ -39,7 +41,12 @@ body {
     font-size: calc(1.5vh + 1.5vw);
 }
 
+.center .form {
+    width: 100%;
+}
+
 .center .input_box {
+    width: 100%;
     display: flex;
     flex-direction: column;
     opacity: 1;
@@ -47,13 +54,20 @@ body {
     transition: opacity 300ms, visibility 300ms;
 }
 
-@media screen and (max-width: 479px) { 
+/*
+@media screen and (max-width: 767px) {
 
-    .center .input_box {
-        width: 80%;
+    .center .ome {
+        padding-left: 5%;
+        padding-right: 5%;
     }
+
+}
+
+@media screen and (max-width: 479px) { 
     
 }
+*/
 
 .center .input_box.hide {
     opacity: 0;
@@ -67,6 +81,7 @@ body {
 }
 
 .center .input_box .input {
+    width: 100%;
     padding: 6px;
     margin-bottom: 10px;
     font-size: calc(1.7vh + 1.7vw);
@@ -103,4 +118,36 @@ body {
     color: #dadada;
     border: 2px solid #b1b1b1;
     background-color: #b1b1b1;
+}
+
+.right_bottom {
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.right_bottom .back_to_top {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: calc(1.1vh + 1.1vw);
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    color: #ffffff;
+    border: 2px solid black;
+    background-color: black;
+    transition: opacity 300ms, visibility 300ms;
+}
+
+.right_bottom .back_to_top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.right_bottom .back_to_top .material-symbols-outlined {
+    margin-right: 5px;
+    font-size: calc(1.1vh + 1.1vw);
 }

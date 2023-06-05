@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>脱出ゲーム</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <script src="script.js"></script>
 </head>
 <body>
     <div class="center">
-        <span class="ome" id="ome_message" style="display: none;">
+        <span class="ome" id="ome_message">
             脱出成功！
             <div class="description">ここからは教授室です。<br>指示に従って、教授室から再び脱出しましょう。</div>
         </span>
         <div class="input_box" id="input_box">
             <label class="label" id="insert_text">番号を入力</label>
-            <input class="input" id="center_input_box">
+            <form class="form" id="input_form">
+                <input type="number" class="input"  id="center_input_box">
+            </form>
             <button type="button" class="btn"id="center_input_box_submit">
                 確定
             </button>
         </div>
+    </div>
+    <div class="right_bottom">
+        <button type="button" class="back_to_top" id="back_to_top">
+            <span class="material-symbols-outlined">
+                arrow_back_ios
+            </span>
+            番号の入力に戻る
+        </button>
     </div>
 </body>
 </html>

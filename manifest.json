@@ -1,0 +1,22 @@
+{
+    "name": "脱出ゲーム",
+    "short_name": "脱出ゲーム",
+    "description": "脱出ゲーム",
+    "Scope": "/c-page/",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#fffff",
+    "icons": [
+        {
+            "src": "./assets/icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/icon_256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ]
+}
