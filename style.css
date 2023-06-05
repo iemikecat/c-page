@@ -62,13 +62,14 @@ body {
 
 .center .input_box .label {
     margin-bottom: 8px;
+    font-size: calc(1.4vh + 1.4vw);
     font-weight: bold;
 }
 
 .center .input_box .input {
     padding: 6px;
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: calc(1.7vh + 1.7vw);
     text-align: center;
     outline: 0px solid transparent;
     border: 2px solid black;
@@ -89,7 +90,7 @@ body {
 .center .input_box .btn {
     padding: 6px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: calc(1.5vh + 1.5vw);
     font-weight: bold;
     color: #ffffff;
     border: 2px solid black;
