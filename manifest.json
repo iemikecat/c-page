@@ -1,7 +1,7 @@
 {
-    "name": "脱出ゲーム",
-    "short_name": "脱出ゲーム",
-    "description": "脱出ゲーム",
+    "name": "dassyutu",
+    "short_name": "dassyutu",
+    "description": "dassyutu",
     "Scope": "/c-page/",
     "start_url": "./index.html",
     "display": "standalone",
